@@ -31,7 +31,7 @@ Previo a la publicación de los criterios Phoenix, se habían utilizado diversas
 
 === PELOD-2 (Pediatric Logistic Organ Dysfunction-2)
 
-La escala PELOD-2 evalúa la disfunción de cinco sistemas orgánicos (neurológico, cardiovascular, renal, respiratorio y hematológico) mediante 10 variables @leteurtre2003pelod. Ha sido ampliamente utilizada para estimar mortalidad en UCIP y fue propuesta como criterio de disfunción orgánica en sepsis pediátrica @leclerc2017podium.
+La escala PELOD-2 evalúa la disfunción de cinco sistemas orgánicos (neurológico, cardiovascular, renal, respiratorio y hematológico) mediante 10 variables @leteurtre2013pelod. Ha sido ampliamente utilizada para estimar mortalidad en UCIP y fue propuesta como criterio de disfunción orgánica en sepsis pediátrica @leclerc2017podium.
 
 === pSOFA (Pediatric Sequential Organ Failure Assessment)
 

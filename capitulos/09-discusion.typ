@@ -12,7 +12,7 @@ Se resumirán los hallazgos más relevantes del estudio en relación con el valo
 
 Los resultados se compararán con los reportados en la validación original de la escala Phoenix @sanchez2024phoenix @dewitt2024phoenix, así como con estudios de validación en otras poblaciones. Se discutirán las similitudes y diferencias en el rendimiento pronóstico, considerando las características de las poblaciones estudiadas.
 
-Se analizará el rendimiento de la escala Phoenix en comparación con otras escalas de disfunción orgánica pediátrica previamente utilizadas, como PELOD-2 @leteurtre2003pelod, pSOFA @matics2017podium y PRISM III @pollack2016prism.
+Se analizará el rendimiento de la escala Phoenix en comparación con otras escalas de disfunción orgánica pediátrica previamente utilizadas, como PELOD-2 @leteurtre2013pelod, pSOFA @matics2017podium y PRISM III @pollack2016prism.
 
 == Interpretación clínica
 
