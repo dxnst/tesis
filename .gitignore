@@ -1,0 +1,6 @@
+# Archivos generados por Typst
+*.pdf
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
