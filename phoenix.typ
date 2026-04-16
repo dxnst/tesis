@@ -79,14 +79,25 @@
     #v(0.5cm)
   ]
 
-  #v(4cm)
+  #v(1cm)
 
-  // Nombre formateado según la imagen
+// Nombre formateado en dos filas (encabezados y datos)
   #text(size: 12pt)[
-    *PRESENTADO POR:* \
-    #v(0.2cm)
-    *JOSUÉ DANIEL SOTO CONSUEGRA* \
-    Médico Residente I de Pediatría
+    #align(center)[
+      #grid(
+        columns: (auto, auto, auto),
+        column-gutter: 2em, // Espacio horizontal entre las columnas
+        row-gutter: 0.6em,  // Espacio vertical entre la fila de títulos y la de datos
+
+        // Primera fila: Encabezados
+        [Nombre], [Carnet (DPI)], [Registro académico],
+
+        // Segunda fila: Datos
+        [Josué Daniel Soto Consuegra], [3157980840902], [201931435]
+      )
+    ]
+
+    #v(0.4cm)
   ]
 
   #v(3cm)
@@ -100,7 +111,7 @@
     ]
   ]
 
-  #v(2cm)
+  #v(1cm)
 
   #text(size: 12pt)[
     Quetzaltenango, abril de 2026
