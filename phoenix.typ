@@ -6,7 +6,6 @@
 #set page(
   paper: "us-letter",
   margin: (left: 2.5cm, right: 2.5cm, top: 2cm, bottom: 2cm),
-  numbering: "1",
   number-align: center,
 )
 
@@ -120,6 +119,13 @@
 
 #pagebreak()
 #set page(background: none, numbering: "1")
+#counter(page).update(1)
+
+// Generar índice de contenidos automáticamente
+#outline(
+  title: "Índice de contenidos",
+  indent: auto
+)
 
 = Sección I. Antecedentes y contextualización del problema de investigación
 
