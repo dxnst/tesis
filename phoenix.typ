@@ -90,11 +90,13 @@ Determinar la asociación de la puntuación de Sepsis Phoenix calculada al ingre
 
 = Sección III. Población y métodos
 
-Se propone un estudio observacional analítico, de cohorte prospectiva, en la UCIP del Hospital General del IGSS de Quetzaltenango. La población fuente estará compuesta por pacientes pediátricos (1 mes a <18 años) admitidos con sospecha o confirmación de infección y diagnóstico clínico de sepsis durante el período definido del protocolo. La muestra será no probabilística, consecutiva, incluyendo todos los casos elegibles hasta completar el tiempo de reclutamiento.
+Se propone un estudio observacional analítico, de cohorte prospectiva, en la UCIP del Hospital General del IGSS de Quetzaltenango. La población fuente estará compuesta por pacientes pediátricos (1 mes a <18 años) admitidos con sospecha o confirmación de infección y diagnóstico clínico de sepsis durante el período de enero de 2026 a diciembre de 2027. La muestra será no probabilística, consecutiva, incluyendo todos los casos elegibles en ese intervalo.
 
 Se incluirán pacientes con datos mínimos para calcular la puntuación Phoenix al ingreso y seguimiento vital hasta 30 días. Se excluirán reingresos del mismo episodio, expedientes incompletos para la variable de desenlace o traslados sin posibilidad de seguimiento. Variables a estudiar: mortalidad a 30 días (respuesta principal), puntuación Phoenix total y por dominios (exposición principal), edad, sexo, comorbilidades, foco infeccioso, necesidad de ventilación mecánica, uso de vasoactivos, lactato y otros parámetros clínicos de gravedad.
 
-Hipótesis de investigación: a mayor puntuación Phoenix al ingreso, mayor probabilidad de mortalidad a 30 días. Hipótesis nula: no existe asociación entre la puntuación Phoenix y mortalidad a 30 días. La recolección de datos se realizará con ficha estandarizada y base electrónica anonimizada, a partir de expediente clínico, hoja de ingreso a UCIP y resultados de laboratorio del ingreso.
+Hipótesis de investigación: a mayor puntuación Phoenix al ingreso, mayor probabilidad de mortalidad a 30 días. Hipótesis nula: no existe asociación entre la puntuación Phoenix y mortalidad a 30 días.
+
+La recolección de datos se realizará con ficha estandarizada y base electrónica anonimizada, a partir de expediente clínico, hoja de ingreso a UCIP y resultados de laboratorio del ingreso.
 
 El análisis incluirá estadística descriptiva, comparación bivariada según desenlace, estimación de OR o RR con intervalos de confianza al 95%, y modelo multivariable (regresión logística) para ajustar confusión. Se calculará desempeño pronóstico con curva ROC y AUC; se explorará calibración del modelo cuando corresponda. Se considerará significancia estadística con p < 0.05.
 
