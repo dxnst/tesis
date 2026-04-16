@@ -1,0 +1,209 @@
+Rudd2020:
+  type: article
+  title: "Global, regional, and national sepsis incidence and mortality, 1990–2017: analysis for the Global Burden of Disease Study"
+  author:
+    - Rudd, Kristina E
+    - Johnson, Sarah Charlotte
+    - Agesa, Kareha M
+    - Shackelford, Katya Anne
+    - Tsoi, Derrick
+    - Kievlan, Daniel Rhodes
+    - Colombara, Danny V
+    - Ikuta, Kevin S
+    - Kissoon, Niranjan
+    - Finfer, Simon
+    - Fleischmann-Struzek, Carolin
+    - Machado, Flavia R
+    - Reinhart, Konrad K
+    - Rowan, Kathryn
+    - Seymour, Christopher W
+    - Watson, R Scott
+    - West, T Eoin
+    - Marinho, Fatima
+    - Hay, Simon I
+    - Lozano, Rafael
+    - Lopez, Alan D
+    - Angus, Derek C
+    - Murray, Christopher J L
+    - Naghavi, Mohsen
+  date: 2020-01
+  page-range: 200-211
+  url: http://dx.doi.org/10.1016/s0140-6736(19)32989-7
+  serial-number:
+    doi: 10.1016/s0140-6736(19)32989-7
+    issn: 0140-6736
+  parent:
+    type: periodical
+    title: The Lancet
+    publisher: Elsevier BV
+    issue: 10219
+    volume: 395
+Weiss2015:
+  type: article
+  title: Discordant identification of pediatric severe sepsis by research and clinical definitions in the SPROUT international point prevalence study
+  author:
+    - Weiss, Scott L.
+    - Fitzgerald, Julie C.
+    - Maffei, Frank A.
+    - Kane, Jason M.
+    - Rodriguez-Nunez, Antonio
+    - Hsing, Deyin D.
+    - Franzon, Deborah
+    - Kee, Sze Ying
+    - Bush, Jenny L.
+    - Roy, Jason A.
+    - Thomas, Neal J.
+    - Nadkarni, Vinay M.
+  date: 2015-12
+  url: http://dx.doi.org/10.1186/s13054-015-1055-x
+  serial-number:
+    doi: 10.1186/s13054-015-1055-x
+    issn: 1364-8535
+  parent:
+    type: periodical
+    title: Critical Care
+    publisher: Springer Science, Business Media LLC
+    issue: 1
+    volume: 19
+SanchezPinto2024:
+  type: article
+  title: Development and Validation of the Phoenix Criteria for Pediatric Sepsis and Septic Shock
+  author:
+    - Sanchez-Pinto, L. Nelson
+    - Bennett, Tellen D.
+    - DeWitt, Peter E.
+    - Russell, Seth
+    - Rebull, Margaret N.
+    - Martin, Blake
+    - Akech, Samuel
+    - Albers, David J.
+    - Alpern, Elizabeth R.
+    - Balamuth, Fran
+    - Bembea, Melania
+    - Chisti, Mohammod Jobayer
+    - Evans, Idris
+    - Horvat, Christopher M.
+    - Jaramillo-Bustamante, Juan Camilo
+    - Kissoon, Niranjan
+    - Menon, Kusum
+    - Scott, Halden F.
+    - Weiss, Scott L.
+    - Wiens, Matthew O.
+    - Zimmerman, Jerry J.
+    - Argent, Andrew C.
+    - Sorce, Lauren R.
+    - Schlapbach, Luregn J.
+    - Watson, R. Scott
+    - Biban, Paolo
+    - Carrol, Enitan
+    - Chiotos, Kathleen
+    - Flauzino De Oliveira, Claudio
+    - Hall, Mark W.
+    - Inwald, David
+    - Ishimine, Paul
+    - Levin, Michael
+    - Lodha, Rakesh
+    - Nadel, Simon
+    - Nakagawa, Satoshi
+    - Peters, Mark J.
+    - Randolph, Adrienne G.
+    - Ranjit, Suchitra
+    - Souza, Daniela Carla
+    - Tissieres, Pierre
+    - Wynn, James L.
+  date: 2024-02
+  page-range: "675"
+  url: http://dx.doi.org/10.1001/jama.2024.0196
+  serial-number:
+    doi: 10.1001/jama.2024.0196
+    issn: 0098-7484
+  parent:
+    type: periodical
+    title: JAMA
+    publisher: American Medical Association (AMA)
+    issue: 8
+    volume: 331
+Lv2026:
+  type: article
+  title: "Long-term mortality in pediatric sepsis: a systematic review and meta-analysis"
+  author:
+    - Lv, Yongbiao
+    - Zheng, Jiayi
+    - Cai, Junxiang
+    - Shui, Jingwei
+    - Liu, Yuntao
+    - Zhang, Zhongde
+  date: 2026-01
+  url: http://dx.doi.org/10.1080/07853890.2026.2617403
+  serial-number:
+    doi: 10.1080/07853890.2026.2617403
+    issn: 1365-2060
+  parent:
+    type: periodical
+    title: Annals of Medicine
+    publisher: Informa UK Limited
+    issue: 1
+    volume: 58
+Schlapbach2024:
+  type: article
+  title: International Consensus Criteria for Pediatric Sepsis and Septic Shock
+  author:
+    - Schlapbach, Luregn J.
+    - Watson, R. Scott
+    - Sorce, Lauren R.
+    - Argent, Andrew C.
+    - Menon, Kusum
+    - Hall, Mark W.
+    - Akech, Samuel
+    - Albers, David J.
+    - Alpern, Elizabeth R.
+    - Balamuth, Fran
+    - Bembea, Melania
+    - Biban, Paolo
+    - Carrol, Enitan D.
+    - Chiotos, Kathleen
+    - Chisti, Mohammod Jobayer
+    - DeWitt, Peter E.
+    - Evans, Idris
+    - name: Oliveira
+      given-name: Cláudio
+      prefix: Flauzino de
+    - Horvat, Christopher M.
+    - Inwald, David
+    - Ishimine, Paul
+    - Jaramillo-Bustamante, Juan Camilo
+    - Levin, Michael
+    - Lodha, Rakesh
+    - Martin, Blake
+    - Nadel, Simon
+    - Nakagawa, Satoshi
+    - Peters, Mark J.
+    - Randolph, Adrienne G.
+    - Ranjit, Suchitra
+    - Rebull, Margaret N.
+    - Russell, Seth
+    - Scott, Halden F.
+    - name: Souza
+      given-name: Daniela Carla
+      prefix: de
+    - Tissieres, Pierre
+    - Weiss, Scott L.
+    - Wiens, Matthew O.
+    - Wynn, James L.
+    - Kissoon, Niranjan
+    - Zimmerman, Jerry J.
+    - Sanchez-Pinto, L. Nelson
+    - Bennett, Tellen D.
+    - Bubeck Wardenburg, Juliane
+  date: 2024-02
+  page-range: "665"
+  url: http://dx.doi.org/10.1001/jama.2024.0179
+  serial-number:
+    doi: 10.1001/jama.2024.0179
+    issn: 0098-7484
+  parent:
+    type: periodical
+    title: JAMA
+    publisher: American Medical Association (AMA)
+    issue: 8
+    volume: 331
