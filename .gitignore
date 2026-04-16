@@ -1,0 +1,11 @@
+# Typst build outputs
+*.pdf
+*.png
+*.svgz
+
+# Build directories
+build/
+out/
+
+# Typst cache
+.typst-cache/

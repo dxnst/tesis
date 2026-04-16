@@ -1,0 +1,27 @@
+name: Build Typst Thesis
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v3
+
+      - name: Compile PDF
+        run: |
+          mkdir -p build
+          typst compile main.typ build/tesis.pdf
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tesis-pdf
+          path: build/tesis.pdf

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect x="0" y="0" width="1200" height="700" fill="#f7f7f7"/>
+  <rect x="40" y="40" width="1120" height="620" fill="none" stroke="#666" stroke-width="3" stroke-dasharray="14 10"/>
+  <text x="600" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="#555">
+    Marcador de figura
+  </text>
+  <text x="600" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#777">
+    Reemplace por su diagrama o gráfico final
+  </text>
+</svg>
