@@ -207,3 +207,27 @@ Schlapbach2024:
     publisher: American Medical Association (AMA)
     issue: 8
     volume: 331
+
+Godoy2025:
+  type: article
+  title: "El impacto de las inequidades en latinoamérica y las posibles soluciones para disminuir la carga de sepsis pediátrica: Documento de posición"
+  author:
+    - Godoy, María Claudia
+    - Arriola-Montenegro, Liliana
+    - Nadkarni, Vinay
+    - Carcillo, Joseph
+    - Escalante Kanashiro, Raffo
+    - Garcia, Darío
+    - Von-Koeller-Jones, Beatrix M.
+  date: 2025-09
+  page-range: 130-137
+  url: http://dx.doi.org/10.58597/rpe.v4i3.129
+  serial-number:
+    doi: 10.58597/rpe.v4i3.129
+    issn: 2955-8956
+  parent:
+    type: periodical
+    title: Revista Pediátrica Especializada
+    publisher: Instituto Nacional de Salud del Niño
+    issue: 3
+    volume: 4
