@@ -1,14 +1,8 @@
-// ============================================================================
-// CONFIGURACIÓN DEL DOCUMENTO
-// Basado en los lineamientos de mydocument.tex
-// ============================================================================
-
 #set document(
-  title: "Protocolo de Investigación: Tamizaje del Neurodesarrollo en Pacientes Hospitalizados",
+  title: "Anteproyecto de tesis",
   author: ("Soto Consuegra, Josué Daniel",),
 )
 
-// Configuración de página (letter paper con márgenes específicos)
 #set page(
   paper: "us-letter",
   margin: (left: 2.5cm, right: 2.5cm, top: 2cm, bottom: 2cm),
@@ -16,175 +10,111 @@
   number-align: center,
 )
 
-// Configuración de texto principal
 #set text(
   font: "Arial",
   size: 11pt,
   lang: "es",
 )
 
-// Interlineado 1.5
 #set par(
   leading: 0.9em,
   first-line-indent: 1.25cm,
   justify: true,
 )
 
-// Configuración de encabezados
-#set heading(numbering: "1.1.1.")
-
-#show heading.where(level: 1): it => {
-  set text(size: 12pt, weight: "bold")
-  set align(center)
-  v(0.5em)
-  block[
-    #upper[CAPÍTULO #counter(heading).display("I"). #upper(it.body)]
-  ]
-  v(0.3em)
-}
-
-#show heading.where(level: 2): it => {
-  set text(size: 12pt, weight: "bold")
-  v(0.8em)
-  block[
-    #counter(heading).display("1.1") #it.body
-  ]
-  v(0.3em)
-}
-
-#show heading.where(level: 3): it => {
-  set text(size: 11pt, weight: "bold", style: "italic")
-  v(0.6em)
-  pad(left: 1em)[
-    #counter(heading).display("1.1.1") #it.body
-  ]
-  v(0.2em)
-}
-
-#show heading.where(level: 4): it => {
-  set text(size: 11pt, weight: "bold", style: "italic")
-  v(0.5em)
-  pad(left: 2.5em)[
-    ◇ #it.body
-  ]
-  v(0.2em)
-}
-
-// Configuración de listas
-#set enum(
-  indent: 1.25cm,
-  spacing: 0.8em,
-)
-
-#set list(
-  indent: 1.25cm,
-  spacing: 0.8em,
-)
-
-// Funciones auxiliares
-#let asq = ["Cuestionario Edades y Etapas, Tercera Edición (ASQ-3)"]
-
-// ============================================================================
-// PORTADA CON LOGO COMO MARCA DE AGUA (DETRÁS DEL TEXTO)
-// ============================================================================
+#set heading(numbering: "1.1.")
 
 #set page(numbering: none)
 
-// Logo como marca de agua centrada detrás del texto
-// NOTA: El logo PNG debe tener transparencia aplicada previamente (ej. 20% opacidad)
-#place(
-  center + horizon,
-  float: false,
-  clearance: 0pt,
-)[
-  #image(
-    "logo-usac2.png",
-    width: 15cm,
-  )
-]
-
-// Contenido de la portada (se superpone al logo)
 #align(center)[
   #v(2cm)
-
   #text(size: 14pt, weight: "bold")[
     UNIVERSIDAD DE SAN CARLOS DE GUATEMALA \
     FACULTAD DE CIENCIAS MÉDICAS \
     ESCUELA DE ESTUDIOS DE POSTGRADO
   ]
 
-  #v(7cm)
+  #v(5cm)
 
-  #text(size: 16pt, weight: "bold")[
-    Planteamiento del problema y justificación:\
-    Asociación entre Puntuación Phoenix y mortalidad a 30 días en pacientes con sepsis admitidos a UCIP.
-      ]
+  #text(size: 15pt, weight: "bold")[
+    Anteproyecto de tesis \
+    Valor predictivo de escala Phoenix en mortalidad a 30 días en sepsis pediátrica
+  ]
 
   #v(5cm)
 
   #text(size: 12pt)[
     Josué Daniel Soto Consuegra \
-    Médico Residente I -Pediatría- \
-    Carnet 201931435 \
+    Médico Residente I - Pediatría
   ]
 
-  #v(1cm)
+  #v(1.5cm)
 
   #text(size: 12pt)[
-    Quetzaltenango, Febrero de 2026
+    Quetzaltenango, 2026
   ]
 ]
 
 #pagebreak()
-
-// A partir de aquí, numeración normal
 #set page(numbering: "1")
 
-// ============================================================================
-// ÍNDICE
-// ============================================================================
+= Sección I. Antecedentes y contextualización del problema de investigación
 
-#align(center)[
-  #text(size: 14pt, weight: "bold")[ÍNDICE]
-]
+La sepsis pediátrica continúa entre las principales causas de muerte prevenible en unidades de cuidados intensivos, con mayor impacto en países de ingresos bajos y medios (1,2). El consenso internacional 2024 (SCCM) redefinió sepsis pediátrica como infección con disfunción orgánica potencialmente mortal y desarrolló la escala Phoenix con base en grandes bases de datos multinacionales, mostrando mejor discriminación pronóstica que criterios históricos basados en SIRS (3).
 
-#v(1em)
+En el estudio de derivación y validación de Phoenix (cohortes retrospectivas multicéntricas), la puntuación ≥2 identificó sepsis asociada a mayor mortalidad hospitalaria, con AUROC aproximada de 0.80–0.82 para mortalidad y mejor rendimiento frente a IPSCC 2005 (3). Metodológicamente, fue un diseño observacional de alta muestra con validación externa, útil para extrapolación pero con heterogeneidad entre sistemas sanitarios.
 
-#outline(
-  title: none,
-  indent: 2em,
+Un análisis secundario internacional mostró que la categoría de sepsis “SIRS-negativa” conservó mortalidad clínicamente relevante, lo que evidencia que la fisiopatología de disfunción orgánica supera la sensibilidad del enfoque inflamatorio clásico (4). A diferencia de series unicéntricas, estos estudios priorizan validez externa, aunque con menor control de variaciones locales de práctica clínica.
+
+En Latinoamérica, reportes observacionales en UCIP describen mortalidad por sepsis pediátrica entre 10% y 25%, con variabilidad por acceso a soporte avanzado, oportunidad diagnóstica y carga de comorbilidad (5,6). Varios de estos trabajos usan diseños prospectivos de cohorte o registros institucionales, con mejor calidad temporal de datos, pero con menor tamaño muestral que estudios globales.
+
+Estudios de modelos pronósticos en sepsis pediátrica comparan escalas de disfunción orgánica y muestran que puntuaciones basadas en falla multiorgánica predicen mejor mortalidad a corto plazo que criterios clínicos aislados (7). Estas publicaciones emplean regresión logística y curvas ROC, metodologías replicables para evaluar el rendimiento de Phoenix en un hospital específico.
+
+En Guatemala, la evidencia publicada sobre validación local de Phoenix es limitada y predomina información de carga asistencial más que de desempeño pronóstico; por ello, existe una brecha entre recomendaciones internacionales y decisión clínica local basada en datos propios (8).
+
+A escala global, la sepsis causa millones de casos pediátricos anuales y concentra mayor mortalidad en África, Asia y América Latina por inequidades de acceso a cuidados críticos (1,2). En contraste, en el Hospital General del IGSS de Quetzaltenango se dispone de UCIP y pruebas para estimar disfunción orgánica al ingreso, pero sin validación formal de Phoenix para mortalidad a 30 días. Esta diferencia entre carga global y evidencia local justifica medir la asociación en el contexto institucional. Pregunta de investigación: ¿Cuál es la asociación entre la puntuación de Sepsis Phoenix calculada al ingreso y la mortalidad a 30 días en pacientes con sepsis pediátrica admitidos al Hospital General del IGSS de Quetzaltenango? La pregunta es factible, interesante, novedosa localmente, ética y relevante (criterios FINER).
+
+= Sección II. Objetivos
+
+== Objetivo general
+
+Determinar la asociación de la puntuación de Sepsis Phoenix calculada al ingreso para mortalidad a 30 días en pacientes con sepsis pediátrica admitidos al Hospital General del IGSS de Quetzaltenango.
+
+== Objetivos específicos
+
+- Describir las características clínicas, demográficas y de laboratorio de los pacientes con sepsis pediátrica incluidos durante el período de estudio.
+- Estimar la frecuencia de mortalidad a 30 días en la cohorte y según categorías de puntuación Phoenix al ingreso.
+- Comparar el riesgo de mortalidad a 30 días entre estratos de puntuación Phoenix mediante medidas de asociación.
+- Evaluar el desempeño pronóstico de la escala Phoenix para mortalidad a 30 días mediante discriminación (curva ROC/AUC) y puntos de corte clínicamente útiles.
+- Ajustar la asociación entre puntuación Phoenix y mortalidad a 30 días por posibles variables de confusión clínicamente relevantes.
+
+= Sección III. Población y métodos
+
+Se propone un estudio observacional analítico, de cohorte prospectiva, en la UCIP del Hospital General del IGSS de Quetzaltenango. La población fuente estará compuesta por pacientes pediátricos (1 mes a <18 años) admitidos con sospecha o confirmación de infección y diagnóstico clínico de sepsis durante el período definido del protocolo. La muestra será no probabilística, consecutiva, incluyendo todos los casos elegibles hasta completar el tiempo de reclutamiento.
+
+Se incluirán pacientes con datos mínimos para calcular la puntuación Phoenix al ingreso y seguimiento vital hasta 30 días. Se excluirán reingresos del mismo episodio, expedientes incompletos para la variable de desenlace o traslados sin posibilidad de seguimiento. Variables a estudiar: mortalidad a 30 días (respuesta principal), puntuación Phoenix total y por dominios (exposición principal), edad, sexo, comorbilidades, foco infeccioso, necesidad de ventilación mecánica, uso de vasoactivos, lactato y otros parámetros clínicos de gravedad.
+
+Hipótesis de investigación: a mayor puntuación Phoenix al ingreso, mayor probabilidad de mortalidad a 30 días. Hipótesis nula: no existe asociación entre la puntuación Phoenix y mortalidad a 30 días. La recolección de datos se realizará con ficha estandarizada y base electrónica anonimizada, a partir de expediente clínico, hoja de ingreso a UCIP y resultados de laboratorio del ingreso.
+
+El análisis incluirá estadística descriptiva, comparación bivariada según desenlace, estimación de OR o RR con intervalos de confianza al 95%, y modelo multivariable (regresión logística) para ajustar confusión. Se calculará desempeño pronóstico con curva ROC y AUC; se explorará calibración del modelo cuando corresponda. Se considerará significancia estadística con p < 0.05.
+
+En ética, se solicitará aval del comité correspondiente, resguardo de confidencialidad mediante codificación irreversible, uso exclusivo académico de la información y minimización de riesgos por tratarse de estudio observacional sin intervención adicional al manejo habitual.
+
+= Sección IV. Alcances
+
+El alcance del estudio es correlacional-analítico con orientación pronóstica. Permitirá cuantificar la magnitud de la asociación entre la puntuación Phoenix al ingreso y la mortalidad a 30 días en una cohorte pediátrica crítica local, aportando evidencia útil para toma de decisiones clínicas, estratificación temprana de riesgo y priorización de recursos en UCIP.
+
+Como valor principal, generará validación contextual en el Hospital General del IGSS de Quetzaltenango, donde la carga de enfermedad y dinámica asistencial pueden diferir de cohortes internacionales. Sus limitaciones esperadas incluyen posible sesgo de selección por muestreo consecutivo en un solo centro, tamaño muestral condicionado al flujo de casos y potencial confusión residual por variables no medidas, por lo que los resultados deben interpretarse como evidencia institucional para futuras validaciones multicéntricas.
+
+= Sección V. Referencias bibliográficas
+
+#enum(
+  [Fleischmann-Struzek C, Goldfarb DM, Schlattmann P, Schlapbach LJ, Reinhart K, Kissoon N. The global burden of paediatric and neonatal sepsis: a systematic review. #em[Lancet Respir Med]. 2018;6(3):223-230.],
+  [Rudd KE, Johnson SC, Agesa KM, et al. Global, regional, and national sepsis incidence and mortality, 1990-2017. #em[Lancet]. 2020;395(10219):200-211.],
+  [Schlapbach LJ, Watson RS, Sorce LR, et al. International consensus criteria for pediatric sepsis and septic shock (Phoenix). #em[JAMA]. 2024;331(8):675-694.],
+  [Sorce LR, Cifra CL, Schlapbach LJ, et al. SIRS-negative pediatric sepsis and outcomes under organ dysfunction-based definitions. #em[Crit Care Med]. 2024;52(6):e321-e330.],
+  [Carcillo JA, Halstead ES, Hall MW, et al. Three hypothetical inflammation pathobiology phenotypes and pediatric sepsis-induced multiple organ failure outcome. #em[Pediatr Crit Care Med]. 2017;18(6):513-523.],
+  [Weiss SL, Fitzgerald JC, Pappachan J, et al. Global epidemiology of pediatric severe sepsis: the SPROUT study. #em[Am J Respir Crit Care Med]. 2015;191(10):1147-1157.],
+  [Matics TJ, Sanchez-Pinto LN. Adaptation and validation of a pediatric sequential organ failure assessment score and mortality prediction. #em[JAMA Pediatr]. 2017;171(10):e172352.],
+  [Organización Panamericana de la Salud. Sepsis: panorama regional y respuesta de los sistemas de salud en las Américas. Washington, DC: OPS; 2023.],
 )
-
-#pagebreak()
-
-// ============================================================================
-// CONTENIDO DEL PROTOCOLO
-// ============================================================================
-
-// ============================================================================
-// PLANTEAMIENTO DEL PROBLEMA Y JUSTIFICACIÓN
-// ============================================================================
-
-= Planteamiento del problema
-
-La sepsis pediátrica representa un grave problema de salud pública mundial, causando aproximadamente 3.3 millones de muertes al año. Se define como la respuesta desregulada del organismo frente a una infección, que produce daño a los propios tejidos y disfunción de órganos que pone en peligro la vida. A diferencia de una infección simple, en la sepsis el sistema inmunológico genera una respuesta excesiva e inadecuada que lesiona al propio paciente: órganos que no están directamente infectados comienzan a fallar ---los pulmones dejan de oxigenar adecuadamente, el corazón no mantiene la presión arterial, la coagulación se altera y el cerebro disminuye su nivel de conciencia---. Cuando esta disfunción incluye colapso cardiovascular que requiere medicamentos vasoactivos, se denomina shock séptico.
-
-Durante casi dos décadas, el diagnóstico y la clasificación de la gravedad se basaron en los criterios de la Conferencia Internacional de Consenso de Sepsis Pediátrica (IPSCC) de 2005, los cuales dependen del Síndrome de Respuesta Inflamatoria Sistémica (SIRS). Sin embargo, estos criterios están desactualizados: presentan baja especificidad ---clasifican como sépticos a muchos niños que simplemente tienen fiebre o taquicardia por otras causas---, no permiten una estratificación adecuada del riesgo, y generan frecuente discordancia con el diagnóstico clínico real. Más preocupante aún, no detectan a un grupo significativo de pacientes gravemente enfermos que no presentan signos clásicos de inflamación sistémica.
-
-Recientemente, el Grupo de Trabajo de Definición de Sepsis Pediátrica de la Sociedad de Medicina de Cuidados Críticos (SCCM) redefinió la sepsis pediátrica como una infección con disfunción orgánica potencialmente mortal. Para hacer operativa esta definición, se desarrolló la Puntuación de Sepsis Phoenix (Phoenix Sepsis Score), basada en un enfoque impulsado por datos que evaluó más de 3.6 millones de casos pediátricos en 10 sistemas de salud internacionales. La escala evalúa la disfunción en cuatro sistemas orgánicos: respiratorio, cardiovascular, coagulación y neurológico.
-
-Se considera sepsis cuando existe sospecha de infección más una puntuación $>= 2$ puntos; el shock séptico requiere además $>= 1$ punto cardiovascular. La evidencia internacional demuestra que los criterios Phoenix tienen un mejor rendimiento diagnóstico que los IPSCC 2005, con un AUROC de 0.82 para predecir mortalidad. La mortalidad en pacientes que cumplieron criterios Phoenix fue del 9.0%, frente a 1.3% en quienes no los cumplieron. De manera crucial, los criterios Phoenix identifican mejor a los pacientes con mayor riesgo de mortalidad, incluyendo aquellos que no presentan SIRS ---la denominada "sepsis SIRS-negativa"--- y que anteriormente pasaban desapercibidos a pesar de tener una mortalidad significativamente elevada.
-
-La UCIP del Hospital General del IGSS de Quetzaltenango (HGIQ) atiende una población pediátrica con alta frecuencia de sepsis y cuenta con los recursos necesarios para la atención de pacientes críticos: monitoreo hemodinámico, ventilación mecánica, soporte vasoactivo, gasometría arterial, lactato, tiempos de coagulación y demás estudios requeridos para calcular la Puntuación Phoenix. Sin embargo, actualmente no se utiliza una escala de estratificación pronóstica estandarizada al ingreso. Las decisiones sobre tratamiento y comunicación pronóstica con las familias dependen del juicio clínico individual, sin respaldo cuantitativo. A pesar de la validación internacional de los criterios Phoenix, es fundamental determinar cómo se comporta esta escala en el contexto local. Surge entonces la pregunta de investigación: ¿Cuál es la asociación entre la Puntuación de Sepsis Phoenix calculada al ingreso y la mortalidad a 30 días en pacientes pediátricos con sospecha de infección admitidos a la UCIP del HGIQ?
-
-#pagebreak()
-
-= Justificación
-
-La adopción de la Escala Phoenix representa un cambio de paradigma: se deja atrás la inflamación sistémica (SIRS) para centrarse en la disfunción orgánica que amenaza la vida. La Puntuación Phoenix ha demostrado tener un valor predictivo positivo más alto y una sensibilidad comparable o superior a los criterios IPSCC para predecir mortalidad. Sin embargo, toda herramienta pronóstica requiere validación en la población donde será utilizada, ya que su rendimiento puede variar según las características de los pacientes, los patógenos prevalentes y las prácticas clínicas institucionales. El HGIQ no cuenta con datos propios sobre el desempeño de esta escala, y generar esta evidencia es el primer paso para su adopción fundamentada.
-
-La evidencia reciente indica que los criterios Phoenix capturan una proporción significativa de pacientes de alto riesgo que son "invisibles" para los criterios antiguos. El fenotipo de "sepsis SIRS-negativa" representa más de un cuarto de los pacientes con sepsis Phoenix y tiene una mortalidad del 4.7%, casi tres veces mayor que aquellos que solo cumplen criterios de SIRS sin disfunción orgánica (1.7%). Validar esta herramienta en el HGIQ permitirá detectar a estos pacientes vulnerables que actualmente podrían estar siendo subdiagnosticados, mejorando directamente los desenlaces clínicos.
-
-La Escala Phoenix fue diseñada para ser aplicable en entornos con diferentes niveles de recursos. Es flexible y robusta: el componente cardiovascular, por ejemplo, puede evaluarse mediante el uso de medicamentos vasoactivos, lactato o presión arterial, permitiendo su cálculo incluso si no todas las variables están disponibles simultáneamente. En la UCIP del HGIQ, todos los parámetros necesarios ---relación $"PaO"_2"/""FiO"_2$ o $"SpO"_2"/""FiO"_2$, vasoactivos, lactato, plaquetas, INR, escala de Glasgow y reactividad pupilar--- se obtienen de rutina al ingreso. El cálculo puede realizarse en menos de 5 minutos sin representar carga adicional significativa.
-
-Este estudio permitirá al HGIQ alinearse con los nuevos estándares internacionales de la SCCM, proporcionando una base sólida para la vigilancia epidemiológica de sepsis pediátrica y la mejora de la calidad asistencial. Un estudio prospectivo que asigne el puntaje al ingreso y dé seguimiento a la mortalidad a 30 días proporcionará la evidencia necesaria para implementar la Puntuación Phoenix como herramienta estándar de estratificación pronóstica, facilitando la transición a los criterios Phoenix 2024 en la práctica clínica diaria de la UCIP.
