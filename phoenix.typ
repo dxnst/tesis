@@ -82,8 +82,7 @@
   paper: "us-letter",
   margin: (left: 2.5cm, right: 2.5cm, top: 2cm, bottom: 2cm),
   background: [
-    #place(center + horizon, image("logo-usac.png", width: 14cm))
-    #place(top + left, block(width: 100%, height: 100%, fill: rgb("ffffffD9")))
+    #place(center + horizon, image("logo-usac2.png", width: 14cm))
   ],
 )
 
@@ -195,11 +194,38 @@ La obtención de una puntuación $>= 4$ en la escala de Sepsis Phoenix al ingres
 == Técnicas de recolección de datos e instrumentos
 La recolección de la información se efectuará a través de la revisión sistemática de los expedientes clínicos físicos y del sistema informático hospitalario. Se diseñará y validará un instrumento estructurado (boleta de recolección de datos) que consolidará de forma estandarizada los signos vitales, parámetros de soporte ventilatorio y vasoactivo, y biomarcadores de laboratorio (recuento de plaquetas, dímero-D, fibrinógeno, lactato sérico) documentados en las primeras 24 horas del ingreso. Los datos serán codificados y tabulados en una base de datos electrónica (formato de valores separados por comas).
 
+La técnica principal será la observación clínica prospectiva y la revisión sistemática de registros médicos. Se monitorizarán ingresos en el área de emergencia y unidad de cuidados intensivos pediátricos de manera continua desde noviembre de 2026 hasta noviembre de 2027. Al identificar a un paciente que cumpla con los criterios de inclusión, se procederá a extraer la información directamente de la evaluación clínica inicial, las hojas de monitoreo de signos vitales, los reportes de laboratorio y la evolución médica en el expediente clínico físico y electrónico. El seguimiento del desenlace final se realizará mediante la revisión del estado de egreso y, de ser necesario, contacto de seguimiento a los 30 días posteriores al diagnóstico inicial.
+
+=== Instrumento de recolección
+El instrumento consistirá en una ficha de recolección de datos clínicos y puntuación Phoenix, la cual será estructurada y dividida en tres secciones fundamentales:
++ Sección A: Perfil sociodemográfico y antropométrico. Se documentará la edad, sexo biológico, estado nutricional, lugar de procedencia y presencia de comorbilidades crónicas.
++ Sección B: Parámetros fisiológicos y Escala Phoenix al diagnóstico. Datos exactos del peor valor registrado en las primeras 24 horas del diagnóstico de sepsis para calcular el puntaje de la escala Phoenix (de 0 a 13 puntos). Incluirá los siguientes sub-apartados:
+  + Componente Respiratorio: Requerimiento de soporte ventilatorio (invasivo o no invasivo), saturación de oxígeno (SpO2), presión parcial de oxígeno (PaO2) y fracción inspirada de oxígeno (FiO2) para el cálculo de los índices SpO2/FiO2 o PaO2/FiO2.
+  + Componente Cardiovascular: Registro de la presión arterial media, niveles de lactato sérico (mmol/L) y el uso, tipo y dosis de medicamentos vasoactivos (ej. epinefrina, norepinefrina, dopamina, dobutamina).
+  + Componente de Coagulación: Resultados de laboratorio que incluyan recuento de plaquetas, índice internacional normalizado (INR), tiempo de protrombina (TP) y niveles de fibrinógeno.
+  + Componente Neurológico: Evaluación del estado mental mediante la Escala de Coma de Glasgow adaptada para pediatría y evaluación de la reactividad pupilar.
++ Sección C: Desenlace clínico y seguimiento. El apartado final del instrumento estará destinado a registrar las fechas exactas de ingreso y egreso hospitalario, los días de estancia en la unidad de cuidados intensivos, la necesidad de terapias de soporte extracorpóreo y la variable dependiente principal: el estado del paciente (supervivencia o mortalidad) exactamente a los 30 días de la evaluación inicial.
+
 == Plan de análisis
 El análisis estadístico iniciará con la fase descriptiva, calculando medidas de tendencia central (media o mediana) y de dispersión (desviación estándar o rango intercuartílico) para las variables cuantitativas según su distribución de normalidad, así como frecuencias absolutas y porcentajes para las variables categóricas.  Para el análisis bivariado se empleará la prueba de Chi-cuadrado para la asociación entre puntuación Phoenix ($<4$ vs $>=4$) y mortalidad a 30 días. Se calculará el Área Bajo la Curva de Características Operativas del Receptor (AUROC) y se realizará regresión logística binaria para el cálculo de Odds Ratios (OR) con un nivel de significancia de $p < 0.05$.
 
 == Principios éticos en la investigación
-La presente investigación se regirá bajo los principios éticos internacionales dictados por la Declaración de Helsinki. Previo al inicio de la recolección de datos, el protocolo será sometido para su dictamen y aprobación por el Comité de Ética, Investigación y Docencia del IGSS. Al tratarse de un estudio observacional basado en expedientes, el riesgo físico es nulo; no obstante, se garantizará la máxima confidencialidad y anonimato de los participantes mediante la seudonimización de las bases de datos.
+La presente investigación se regirá bajo los principios éticos internacionales dictados por la Declaración de Helsinki. Previo al inicio de la recolección de datos, el protocolo será sometido para su dictamen y aprobación por el Comité de Ética, Investigación y Docencia del IGSS. Al tratarse de un estudio observacional basado en expedientes, el riesgo físico es nulo; no obstante, se garantizará la máxima confidencialidad y anonimato de los participantes mediante la seudonimización de las bases de datos. A continuación, se detallarán los aspectos éticos considerados:
+
+=== Respeto por las personas
+Se asegurará el respeto a la autonomía de los cuidadores y los participantes al obtener el consentimiento informado previo a la participación en el estudio. En este documento se describirán claramente los objetivos de la investigación, el carácter observacional de la recolección de datos clínicos, los beneficios potenciales para la práctica médica y la ausencia de riesgos adicionales a los de su manejo clínico habitual.
+
+=== Confidencialidad y privacidad
+La privacidad de los pacientes se respetará de forma estricta. Toda la información recolectada de los registros clínicos y el monitoreo de los criterios de la escala Phoenix será tratada de manera confidencial y utilizada únicamente con fines de investigación.
+
+=== Justicia
+Se garantizará que todos los niños elegibles que ingresen al Hospital General del IGSS en Quetzaltenango tengan igualdad de oportunidades para formar parte del estudio, sin discriminación por razones de género, etnia o nivel socioeconómico. Asimismo, los resultados estarán orientados a beneficiar a la comunidad pediátrica en general, aportando evidencia que mejore la estratificación de riesgo y el pronóstico de la sepsis en el entorno local.
+
+=== Beneficencia y no maleficencia
+Este estudio no implicará intervenciones invasivas ni riesgos adicionales para los participantes. Se emplearán técnicas observacionales basadas en la revisión de expedientes y la aplicación de criterios clínicos y de laboratorio estandarizados que no alterarán el tratamiento médico ni el bienestar de los niños o sus cuidadores.
+
+=== Categoría de riesgo
+El diseño del estudio se basará en el registro de datos fisiológicos y de laboratorio obtenidos durante la atención estándar del paciente con sepsis. Al ser un estudio observacional que utilizará información generada por la práctica clínica rutinaria y no realizará intervenciones experimentales, se clasificará dentro de las normas éticas institucionales como una investigación de riesgo mínimo.
 
 = Alcances, Valor y Limitaciones
 == Alcances
